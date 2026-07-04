@@ -136,7 +136,7 @@
     transform:translate(14px,14px); border-radius:22px;
     border:2px solid var(--ink-soft); opacity:.5;
   }
-  .photo-frame img{position:relative; border-radius:22px; box-shadow:var(--shadow); aspect-ratio:3/4; object-fit:cover; width:100%}
+  .photo-frame img{position:relative; border-radius:22px; box-shadow:var(--shadow); width:100%; height:auto}
   .photo-frame figcaption{
     position:absolute; left:1rem; bottom:1rem; z-index:2;
     background:color-mix(in srgb, var(--ink) 88%, transparent); color:var(--ground);
@@ -161,8 +161,7 @@
   /* ============ story ============ */
   .story-grid{display:grid; grid-template-columns:340px 1fr; gap:clamp(2rem,5vw,4rem); align-items:start}
   .story-grid .photo-frame{max-width:340px; justify-self:start}
-  .story-grid .photo-frame img{aspect-ratio:3/4}
-  .hero-grid .photo-frame img{aspect-ratio:2/3}
+  
   .story p{color:var(--ink)}
   .story p.dim{color:var(--muted)}
   .pull{
@@ -205,7 +204,7 @@
   .voice cite{display:block; font-style:normal; font-size:1rem; color:var(--muted); margin-top:1.4rem; letter-spacing:.06em}
   .voice .detail{margin-top:1.8rem; padding-top:1.8rem; border-top:1px solid var(--hairline); color:var(--muted); font-size:1.05rem}
   .voice .photo-frame{max-width:380px}
-  .voice .photo-frame img{aspect-ratio:9/16}
+  
 
   /* ============ program ============ */
   .program-card{
